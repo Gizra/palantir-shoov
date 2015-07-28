@@ -64,10 +64,12 @@ describe('Visual monitor testing', function() {
         exclude: [
           // Team's image.
           '.view-team-members img'
-          ,'.view-team-members h4'
+        ],
+        remove: [
+          // Team name / position
+          '.view-team-members h4'
           ,'.view-team-members h6'
         ],
-        remove: [],
         screenWidth: selectedCaps == 'chrome' ? [960, 1200] : undefined,
       }, shoovWebdrivercss.processResults)
       .call(done);
