@@ -69,8 +69,9 @@ describe('Visual monitor testing', function() {
           // Team name / position
           '.view-team-members h4'
           ,'.view-team-members h6'
+          // , '.menu-mlid-6228'
         ],
-        screenWidth: selectedCaps == 'chrome' ? [960, 1200] : undefined,
+        // screenWidth: selectedCaps == 'chrome' ? [960, 1200] : undefined,
       }, shoovWebdrivercss.processResults)
       .call(done);
   });
